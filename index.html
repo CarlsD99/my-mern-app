@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div = class="container">
+      <h1>REGISTER</h1>
+      <form id="form_register" action="" onsubmit="" method="get"><!---ONsubmit y action buscar que poner--->
+          <input type="text" id="username_reg" placeholder="USUARIO" required><br><br>
+          <input type="password" id="passw_reg" placeholder="CONTRASEÑA" required><br><br>
+          <input type="tel" id="ced_user" placeholder="NUMERO DE IDENTIFICACION/PASAPORTE" min="9" max="11" maxlength="11"><br><br>
+          <input list="user_gen" id="gen" name="user_gen" placeholder="GENERO"/>
+          <datalist id="user_gen" required>
+              <option value="MASCULINO" id="gen_m"></option>
+              <option value="FEMENINO" id="gen_f"></option>
+              <option value="OTRO" gen="gen_o"></option>
+              <option value="NO ESPECIFICAR" id="gen_nu"></option>
+
+          </datalist>
+          <br><br>
+          <label for="id_img" required>SUBIR DOCUMENTO DE IDENTIFICACION</label><br>
+          <input type="file" accept="image/png, image/jpeg" or accept=".png, .jpg, .jpeg" capture="user" name="id_img" id="id_img"><br><br>
+          <input list="user_mail" id="mail" name="user_mail" placeholder="CORREO ELECTRONICO"/><br><br>
+
+          <button type="submit" onclick="">REGISTRARSE</button><!---Onclick buscar que poner--->
+      </form>
+
+      <h1>LOGIN</h1>
+      <form method="get" id="form_login" action="#" onsubmit="">
+          <input type="text" id="username_log" placeholder="USUARIO" required>
+          <input type="password" id="passw_log" placeholder="CONTRASEÑA" required>
+          <button type="submit">INICIAR SESION</button>
+      </form>
+
+      <h2>names list</h2>
+
+      <ul id="nameslist"></ul>
+
+
+
+
+  </div>
+
+  <header>
+      <h1>Subir Categoria</h1>
+
+      <nav>
+
+          <ul>
+
+              <li><a href="#link">CATEGORIA 1</a></li>
+              <li><a href="#">CATEGORIA 2</a></li>
+              <li><a href="#">CATEGORIA 3</a></li>
+              <li><a href="#">CATEGORIA 4</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <form action="#" method="post"><!--Postear con un script del backend-->
+      <input type="hidden" name="Categoria" value="CATEGORIA 1">
+  </form>
+  <script src="scripts/script.js"></script>
+
+
+
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
